@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <title>리액트 1분만에 추가해보기!</title>
+    </head>
+    <body>
+        <!-- <div id="root">
+            <main>
+                <header>
+                    <h1>weniv 홈페이지</h1>
+                    <div>메뉴</div>
+                </header>
+                <section>
+                    <p>제품 소개</p>
+                </section>
+                <section>
+                    <p>회사 소개</p>
+                </section>
+                <section>
+                    <p>팀 소개</p>
+                </section>
+                <footer>
+                    <p>회사 정보</p>
+                </footer>
+            </main>
+        </div> -->
+
+        <div id="root"></div>
+        <script
+            src="https://unpkg.com/react@17/umd/react.development.js"
+            crossorigin
+        ></script>
+        <script
+            src="https://unpkg.com/react-dom@17/umd/react-dom.development.js"
+            crossorigin
+        ></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+        <script type="text/babel">
+       
+       // 인자값 삽입
+    
+           const Header = function(name) {
+                return (
+                    <header>
+                        <h1>{name} 홈페이지</h1>
+                        <div>메뉴</div>
+                    </header>
+          )
+        }
+
+           const Section1 =  (
+                <section>
+                    <p>제품 소개</p>
+                </section>
+           );
+
+           const Section2 = (
+                <section>
+                    <p>회사 소개</p>
+                </section>
+           );
+
+           const Section3 = (
+                <section>
+                    <p>팀 소개</p>
+                </section>
+           );
+
+           const Footer = (
+                <footer>
+                    <p>회사 정보</p>
+                </footer>
+           );
+
+    const app = (
+            <main>
+                {Header('상혁')}
+                {Section1}
+                {Section2}
+                {Section3}
+                {Footer}
+            </main>
+            );
+
+// react : 재사용성 용이 / 구조파악 용이
+//html은 거의 비어있는 상태로 레이아웃을 잡음.
+
+            const domContainer = document.querySelector("#root");
+            ReactDOM.render(app, domContainer);
+        </script>
+    </body>
+</html>
