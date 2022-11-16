@@ -1,4 +1,4 @@
-# React// https://react-bootstrap.github.io/ 개인적인 경험으로는 https://ant.design/ 괜찮았어요.
+// https://react-bootstrap.github.io/ 개인적인 경험으로는 https://ant.design/ 괜찮았어요.
 // React + Tailwind도 좋았습니다.
 // https://react-bootstrap.github.io/ 을 추천받았습니다.
 
