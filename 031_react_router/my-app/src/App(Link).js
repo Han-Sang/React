@@ -4,6 +4,7 @@ import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 function App() {
   return (
     <BrowserRouter>
+  
       <Link to="/"> home </Link>
       <Link to="/one"> one </Link>
       <Link to="/two"> two </Link>

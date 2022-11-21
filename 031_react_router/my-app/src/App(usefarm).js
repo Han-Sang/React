@@ -53,7 +53,7 @@ function HojunIndex(){
 
 function HojunOne(){
     const location = useLocation();
-  console.log(location)
+    console.log(location)
   return <h1>hello Hojun 1</h1>
 }
 
